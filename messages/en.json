@@ -1,0 +1,16 @@
+{"website":{
+    "name": "Blog"
+},
+"languages": {
+    "title": "Languages",
+    "1": {
+        "title": "English",
+        "code": "en"
+    },
+    "2": {
+        "title": "Arabic",
+        "code": "ar"
+    }
+}
+
+}

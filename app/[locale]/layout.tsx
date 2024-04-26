@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Navbar from "./_components/Navbar";
+import Navbar from "../_components/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,15 +12,19 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  params: { locale }
 }: Readonly<{
   children: React.ReactNode;
+  params: { locale: string };
 }>) {
   return (
-    <html lang="en">
+    <html lang={locale} dir={locale === "ar" ? "rtl" : "ltr"}>
       <body className={inter.className}>
         <Navbar />
-
-        {children}</body>
+        <main className="grid min-h-screen p-[30px] gap-[30px]">
+          {children}
+        </main>
+      </body>
     </html>
   );
 }
