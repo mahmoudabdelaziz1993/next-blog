@@ -5,4 +5,5 @@ export type Post = {
     content:   string;
     language:  string;
     id:        string;
+    read:      boolean;
 }

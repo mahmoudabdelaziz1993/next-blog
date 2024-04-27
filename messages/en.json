@@ -21,7 +21,7 @@
     "search": {
       "title": "Search results"
     },
-    "searchInput":{
+    "searchInput": {
       "placeholder": "Search for posts ..."
     }
   },
@@ -29,5 +29,10 @@
     "previous": "Previous",
     "next": "Next",
     "page": "Page"
+  },
+  "categotyList": {
+    "1": "All",
+    "2": "Unread",
+    "3": "Read"
   }
 }

@@ -7,6 +7,7 @@ import Search from './../../Search/index';
 import { useTranslations } from 'next-intl'
 import PaginationWrapper from './PaginationWrapper'
 import Link from 'next/link'
+import CategotyList from '../Category'
 type props = {
     p: number,
     locale: string,
@@ -14,11 +15,12 @@ type props = {
     placeholder: string,
     query?: string
     path?: string;
+    read?: boolean;
 
 }
 
-async function PostsList({ p, locale, title, placeholder, query, path }: props) {
-    const { posts, next, previous, current } = await fetchPostsWithPagination(p ?? 1, query ?? '');
+async function PostsList({ p, locale, title, placeholder, query, path  , read}: props) {
+    const { posts, next, previous, current } = await fetchPostsWithPagination(p ?? 1, query ?? '',`${read}`??'');
 
 
     return (
@@ -38,8 +40,8 @@ async function PostsList({ p, locale, title, placeholder, query, path }: props) 
                     <Search locale={locale} placeholder={placeholder} />
                 </section>
             </div>
-            <div className="flex gap-2 justify-end w-full">
-
+            <div className="flex gap-2 justify-between w-full flex-col md:flex-row ">
+                <CategotyList locale={locale} read={read}/>
 
                 <PaginationWrapper next={next} previous={previous} locale={locale} path={path} />
 
