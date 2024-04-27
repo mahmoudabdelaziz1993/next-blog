@@ -17,7 +17,7 @@ function PaginationWrapper({ current, next, previous, locale , path }: props) {
             <Pagination current={current.toLocaleString(locale)} next={next} previous={previous} locale={locale} previousText={previousText} nextText={nextText} currentText={currentText} path={path} />
         )
     }
-    return (<Pagination  next={next} previous={previous} locale={locale} previousText={previousText} nextText={nextText}  />
+    return (<Pagination  next={next} previous={previous} locale={locale} previousText={previousText} nextText={nextText} path={path} />
     )
 }
 
