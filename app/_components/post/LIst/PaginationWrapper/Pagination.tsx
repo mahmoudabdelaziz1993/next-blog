@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import React from 'react'
 type props = {
-    current?: number;
+    current?: string;
     next: number;
     previous: number;
     locale: string;
@@ -20,7 +20,7 @@ function Pagination({ current, next, previous, locale ,nextText,previousText,cur
     return (
         <div className="join">
             <Link href={`/${locale}${path??''}/${previous}`} className="join-item btn btn-primary">« { previousText}</Link>
-            {current && <button className="join-item btn">{currentText} {current.toLocaleString(locale)}</button>}
+            {current && <button className="join-item btn">{currentText} {current}</button>}
             <Link href={`/${locale}${path??''}/${next}`} className="join-item btn btn-primary"> {nextText}» </Link>
         </div>
     )
