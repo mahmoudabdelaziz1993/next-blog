@@ -1,16 +1,27 @@
-{"website":{
+{
+  "website": {
     "name": "Blog"
-},
-"languages": {
+  },
+  "languages": {
     "title": "Languages",
     "1": {
-        "title": "English",
-        "code": "en"
+      "title": "English",
+      "code": "en"
     },
     "2": {
-        "title": "Arabic",
-        "code": "ar"
+      "title": "Arabic",
+      "code": "ar"
     }
-}
+  },
 
+  "sections": {
+    "posts": {
+      "title": "Blog Chronicles"
+    }
+  },
+  "pagination": {
+    "previous": "Previous",
+    "next": "Next",
+    "page": "Page"
+  }
 }

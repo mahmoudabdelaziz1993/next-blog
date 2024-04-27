@@ -12,5 +12,15 @@
       "title": "العربية",
       "code": "ar"
     }
+  },
+  "sections": {
+    "posts": {
+      "title": "المقالات السابقة"
+    }
+  },
+  "pagination": {
+    "previous": "السابق",
+    "next": "التالي",
+    "page": "صفحة"
   }
 }
