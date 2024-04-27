@@ -12,7 +12,7 @@ function SearchPage({ params: { locale, query } }: props) {
 
   return (
     <section>
-      <PostsList p={1} locale={locale} title={t("search.title")} query={query} placeholder={t("searchInput.placeholder")} />
+      <PostsList p={1} locale={locale} title={t("search.title")} query={query} placeholder={t("searchInput.placeholder")} path={`/search/${query}`} />
     </section>
   );
 }
