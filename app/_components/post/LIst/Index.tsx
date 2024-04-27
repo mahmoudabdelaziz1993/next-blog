@@ -20,7 +20,7 @@ type props = {
 }
 
 async function PostsList({ p, locale, title, placeholder, query, path  , read}: props) {
-    const { posts, next, previous, current } = await fetchPostsWithPagination(p ?? 1, query ?? '',`${read}`??'');
+    const { posts, next, previous, current } = await fetchPostsWithPagination(p ?? 1, query ?? '');
 
 
     return (
