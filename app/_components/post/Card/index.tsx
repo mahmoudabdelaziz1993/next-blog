@@ -2,14 +2,15 @@ import { Post } from '@/types'
 import Image from 'next/image'
 import Link from 'next/link'
 type props = {
-    post: Post
+    post: Post;
+    locale: string;
 }
 
-function PostCard({ post }: props) {
+function PostCard({ post , locale}: props) {
     return (
         <div className="card w-full max-w-screen-md bg-base-100 shadow-xl">
             <div className="card-body">
-                <Link href={`/post/${post.id}`} className="card-title line-clamp-1 text-primary">{post.title}</Link>
+                <Link href={`/${locale}/post/${post.id}`} className="card-title line-clamp-1 text-primary">{post.title}</Link>
                 <p className='line-clamp-2'>{post.content}</p>
             </div>
             <figure>

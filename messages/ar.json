@@ -16,6 +16,12 @@
   "sections": {
     "posts": {
       "title": "المقالات السابقة"
+    },
+    "search": {
+      "title": "نتائج البحث"
+    },
+    "searchInput": {
+      "placeholder": "ابحث عن المقالات ..."
     }
   },
   "pagination": {

@@ -17,6 +17,12 @@
   "sections": {
     "posts": {
       "title": "Blog Chronicles"
+    },
+    "search": {
+      "title": "Search results"
+    },
+    "searchInput":{
+      "placeholder": "Search for posts ..."
     }
   },
   "pagination": {

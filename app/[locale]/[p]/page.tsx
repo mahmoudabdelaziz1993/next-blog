@@ -1,4 +1,4 @@
-import PostsList from "@/app/_components/Navbar/post/LIst/Index"
+import PostsList from "@/app/_components/post/LIst/Index"
 import { useTranslations } from "next-intl"
 
 type props = {
@@ -12,7 +12,7 @@ function Post({ params: { locale, p } }: props) {
 
   return (
     <section>
-      <PostsList p={Number(p)} locale={locale} title={t("posts.title")} />
+      <PostsList p={Number(p)} locale={locale} title={t("posts.title")} placeholder={t("searchInput.placeholder")} />
     </section>
   )
 }
